@@ -18,82 +18,233 @@ $primary: #32c3ff;
 // --------------------
 // Style reusable for all components
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
 
 .info {
-  margin: 20px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  display: inline-block;
-  background-color: #5776e9;
-  color: white;
+	margin: 20px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: #5776e9;
+	color: white;
 }
 
 .info.info-danger {
-  background-color: #e73f3f;
+	background-color: #e73f3f;
 }
 
 // --------------------
 // Style for App component
 .App {
-  text-align: center;
+	text-align: center;
 
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+		height: 80px;
+	}
 
-  .App-header {
-    background-color: $primary;
-    padding: 20px;
-    color: white;
+	.App-header {
+		background-color: $primary;
+		padding: 20px;
+		color: white;
 
-    a {
-      color: white;
-      padding: 0 5px;
-      text-decoration: unset;
-    }
+		a {
+			color: white;
+			padding: 0 5px;
+			text-decoration: unset;
+		}
 
-    a.active {
-      font-weight: bold;
-    }
-  }
+		a.active {
+			font-weight: bold;
+		}
+	}
 
-  .App-title {
-    font-size: 1.5em;
-  }
+	.App-title {
+		font-size: 1.5em;
+	}
 
-  .App-intro {
-    font-size: large;
-  }
+	.App-intro {
+		font-size: large;
+	}
 
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
+	@keyframes App-logo-spin {
+		from {
+			transform: rotate(0deg);
+		}
 
-    to {
-      transform: rotate(360deg);
-    }
-  }
+		to {
+			transform: rotate(360deg);
+		}
+	}
 }
 
 // --------------------
 // Style for Home component
 .Home {
-  p {
-    font-size: 1.2em;
-  }
+	p {
+		font-size: 1.2em;
+	}
 }
 
 // --------------------
 // Style for Secret component
 .Secret {
-  .result {
-    font-size: 1.2em;
-    color: $primary;
-  }
+	.result {
+		font-size: 1.2em;
+		color: $primary;
+	}
+}
+
+body {
+	background: url(wall.png) repeat;
+	background-size: 120vw;
+	margin: 0;
+	animation: slide 3s 1;
+}
+
+canvas {
+	display: block;
+	margin: 0 0 0 0;
+}
+.canvas {
+	position: fixed;
+	margin: 15% 0 0 3%;
+	width: 600px;
+	height: 500px;
+}
+.card-group {
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+.ne {
+	background: black;
+	font: 2.5vh "OldTimeRomans";
+	color: white;
+	text-shadow: 0 0px 56px, 0 0 2px, 0 0 0.000001em white, 0 10px 3px #000;
+
+	/* heehlehe */
+}
+.img {
+	height: 35vh;
+}
+
+.card-body {
+	color: white;
+	background: black;
+}
+
+.card-img-top {
+	background: black;
+	height: 35vh;
+	width: 100%;
+	border-top-left-radius: calc(.25rem - 1px);
+	border-top-right-radius: calc(.25rem - 1px);
+}
+@keyframes slide1 {
+	0% {
+		margin-right: -10000px;
+		/* transition-timing-function: ease-in-out; */
+		// background: url(img/wall.png);
+		opacity: .3;
+		background-size: cover;
+	}
+}
+
+// #canvasRain {
+// 	position: absolute;
+// 	margin: 9% 0 0 29%;
+// }
+
+// #canvas1 {
+// 	animation: slide1 7s 1;
+// 	position: absolute;
+// 	margin: .1% 0 0 29%;
+// 	width: 42%;
+// 	height: 60%;
+// }
+
+// #canvas2 {
+// 	animation: slide1 6s 1;
+// 	position: absolute;
+// 	margin: .1% 0 0 29%;
+// 	width: 42%;
+// 	height: 60%;
+// }
+
+// #canvas3 {
+// 	animation: slide1 5s 1;
+// 	position: absolute;
+// 	margin: .1% 0 0 29%;
+// 	width: 42%;
+// 	height: 60%;
+// }
+
+.logo b {
+	position: absolute;
+	font: 12vh "OldTimeRomans";
+	color: rgb(164, 9, 9);
+	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+.logo1 {
+	width: 25%;
+	height: 10px;
+
+	margin: auto;
+}
+
+.logo1 span {
+	font: 2.5vh "OldTimeRomans";
+	color: white;
+	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 0.5em white, 0 10px 3px #000;
+}
+
+#btn-twtr {
+	clear: both;
+	color: #fff;
+	border: 2px solid;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-family: sans-serif;
+	font-size: 14px;
+	width: 13em;
+	padding: 5px 10px;
+	font-weight: 600;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+	opacity: 0.4;
+}
+
+#btn-twtr:hover {
+	color: #fff;
+	opacity: 1;
+}
+
+#control {
+	width: 20%;
+}
+
+#additional {
+	width: 20%;
+}
+
+@keyframes slide {
+	0% {
+		margin: 0 0 0 0;
+	}
+}
+
+.wrapper {
+	display: flex;
 }
